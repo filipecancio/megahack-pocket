@@ -5,8 +5,9 @@ import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip,
   ResponsiveContainer  } from 'recharts';
 
 import { ContainerGraph , TitleGraph, Container, Header, Title,
-  ContainerGraphDelay1, ContainerGraphDelay2 } from './styles';
-  
+  ContainerGraphDelay1, ContainerGraphDelay2, ContentHeaderCard,
+  Card, TitleCard, TextCard } from './styles';
+
 
 const dataChart = [
   {name: "Josias", value: 10},
@@ -46,8 +47,42 @@ function App() {
     <Header>
      <Title>
         Acompanhe Startups do seu segmento
-     </Title> 
+     </Title>      
     </Header>
+    <ContentHeaderCard>
+      <Card>
+        <TitleCard>
+          Total de Startups
+        </TitleCard>
+        <TextCard>
+          12.345
+        </TextCard>
+      </Card>
+      <Card>
+        <TitleCard>
+          Total de Startups
+        </TitleCard>
+        <TextCard>
+          12.345
+        </TextCard>
+      </Card>
+      <Card>
+        <TitleCard>
+          Total de Startups
+        </TitleCard>
+        <TextCard>
+          12.345
+        </TextCard>
+      </Card>
+      <Card>
+        <TitleCard>
+          Total de Startups
+        </TitleCard>
+        <TextCard>
+          12.345
+        </TextCard>
+      </Card>
+    </ContentHeaderCard>
     <Container>
       <ContainerGraph>
         <TitleGraph>
