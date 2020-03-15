@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip,
-  ResponsiveContainer  } from 'recharts';
+  ResponsiveContainer, BarChart   } from 'recharts';
 
 import { ContainerGraph , TitleGraph, Container, Header, Title,
   ContainerGraphDelay1, ContainerGraphDelay2, ContentHeaderCard,

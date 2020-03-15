@@ -96,13 +96,18 @@ export const Title = styled.div`
 
 // Cards styles
 export const ContentHeaderCard = styled.div`
-  height: 150px;
+  min-height: 150px;
   padding: 20px;
-  flex: 1;
+  
   background-color : rgb(245,245,245);
-  justify-content : space-around;
+  justify-content : space-between;
   align-items : center;
   display : flex;
+
+  @media (max-width:880px) {
+    display : flex;
+    flex-wrap: wrap;
+  }
 `;
 
 export const Card = styled.div`
@@ -111,8 +116,19 @@ export const Card = styled.div`
   background-color : #fff; 
   box-shadow: 0 5px 8px rgba(0,0,0,0.2);
   max-width: 300px;
+  
   width : 100%;
   height : 100%;
+  margin-left : 5px;
+  margin-right : 5px;
+
+  transition: all .5s;
+
+  @media (max-width:880px) {
+    min-width: 250px;
+    margin-bottom : 10px;
+  }
+  
 
   @keyframes slideInUp {
   from {
