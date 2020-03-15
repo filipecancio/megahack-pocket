@@ -2,12 +2,6 @@ import styled from 'styled-components';
 import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip } from 'recharts';
 
 
-export const CustomLineChart = styled(LineChart).attrs({
-  width: 600,
-  height : 300
-})`
-  
-`;
 
 export const Container = styled.div`
   display: flex;  
