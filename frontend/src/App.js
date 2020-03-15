@@ -1,24 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 
 function App() {
+  const [data, setData] = useState();
+  const config = {
+    headers: {
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Headers":
+        "Origin, X-Requested-With, Content-Type, Accept"
+    }
+  };
+
+  useEffect(() => {
+    (async () => {
+      axios
+        .get(
+          `https://us-central1-megapoc.cloudfunctions.net/api/inicio`,
+          config
+        )
+        .then(res => {
+          const response = res.data;
+          console.log(response);
+          setData(response);
+        });
+    })();
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Hello world</h1>
     </div>
   );
 }
