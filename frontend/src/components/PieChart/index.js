@@ -14,25 +14,34 @@ import { ContainerGraph, TitleGraph } from './styles';
   ]
 */
 
-export default function CustomPieChart ({data, title}) {
+export default function CustomPieChart ({data, title, innerRadius}) {
   return (
     <>
       <ContainerGraph>
         <TitleGraph>
           {title}
         </TitleGraph>
-        <ResponsiveContainer width="99%" minHeight={300}>
+        <ResponsiveContainer width="99%" minHeight={300} minWidth={300}>
           <PieChart              
               data={data}              
               margin={{
                 top: 10, right: 30, left: 0, bottom: 0,
               }}
             >
-              <Pie dataKey="value" isAnimationActive={true} data={data} cx={200} cy={200} outerRadius={80} fill="#8884d8" label />
+              <Pie 
+                dataKey="value" 
+                isAnimationActive={true} 
+                innerRadius={innerRadius} 
+                data={data} 
+                
+                fill="#8884d8" label >
+              
+              </Pie>
               <Tooltip/>
             </PieChart>
         </ResponsiveContainer>
       </ContainerGraph>
     </>
+     
   );
 }

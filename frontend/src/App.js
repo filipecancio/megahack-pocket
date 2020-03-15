@@ -5,6 +5,21 @@ import UserHeader from "./components/UserHeader";
 import BodyContent from "./components/BodyContent";
 import CustomPieChart from "./components/PieChart";
 
+const datachart = [
+  {name: "Josias", value: 10},
+  {name: "Maria", value: 15},
+  {name: "João", value: 7},
+  {name: "Lucas", value: 25},
+  {name: "Josias", value: 10},
+  {name: "Maria", value: 15},
+  {name: "João", value: 7},
+  {name: "Josias", value: 10},
+  {name: "Maria", value: 15},
+  {name: "João", value: 7},
+  {name: "Josias", value: 10},
+  {name: "Maria", value: 15},
+  {name: "João", value: 7},
+]
 function App() {
   const [data, setData] = useState();
   const config = {
@@ -35,7 +50,7 @@ function App() {
       <Header />
       <UserHeader />
       <BodyContent />
-      
+      <CustomPieChart data={datachart} title="Empresas" innerRadius={60}/>
     </>
   );
 }
