@@ -9,7 +9,7 @@ export const Container = styled.div`
   min-height : calc(100vh - 80px);
   justify-content: center;
   align-items : flex-start;
-  background-color : rgb(245,245,245);
+  background-color : rgb(248,248,248);
   flex-direction: row;
   
 
@@ -35,6 +35,7 @@ export const ContainerGraph =styled.div`
   margin-top: 10px;
   margin-left : 10px;
   box-shadow: 0 5px 8px rgba(0,0,0,0.2);
+  border-radius: 8px;
 
   @keyframes slideInUp {
   from {
@@ -81,15 +82,16 @@ export const Header = styled.div`
   height: 80px;
   padding: 20px;
   flex: 1;
-  background-color : rgb(45,50,62);
+  background-color : rgb(29,18,51);
   justify-content : center;
   align-items : center;
   display : flex;
 `;
+
 export const Title = styled.div`
   font-size : 42px;
   font-weight : 700;
-  color : #fff;
+  color : rgb(248,248,248);
 `;
 
 
@@ -99,10 +101,12 @@ export const ContentHeaderCard = styled.div`
   min-height: 150px;
   padding: 20px;
   
-  background-color : rgb(245,245,245);
+  background-color : rgb(248,248,248);
   justify-content : space-between;
   align-items : center;
   display : flex;
+
+  
 
   @media (max-width:880px) {
     display : flex;
@@ -113,10 +117,11 @@ export const ContentHeaderCard = styled.div`
 export const Card = styled.div`
   flex: 1;
   padding: 5px;
-  background-color : #fff; 
+  background-color : rgb(35,18,121); 
   box-shadow: 0 5px 8px rgba(0,0,0,0.2);
   max-width: 300px;
-  
+  border-radius: 8px;
+
   width : 100%;
   height : 100%;
   margin-left : 5px;
@@ -155,14 +160,14 @@ export const Card = styled.div`
 `;
 
 export const TitleCard = styled.div`
-  color : #808080;
+  color : rgb(248,248,248);
   font-size: 18px;
   width: 100%;
   font-weight: 500;
 `;
 
 export const TextCard = styled.div`
-  color : #808080;
+  color : rgb(248,248,248);
   font-size: 40px;
   width: 100%;
   font-weight: 600;
