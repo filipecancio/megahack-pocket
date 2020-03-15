@@ -22,5 +22,17 @@
       { "name": "Baixo Guandu", "value": 1 },
       { "name": "Boa Esperança", "value": 1 }
     ]
+  },
+  "chart03": {
+    "title": "Dimensão da empresa",
+    "data": [
+      { "name": "Vitória", "value": 10 },
+      { "name": "Vila Velha", "value": 82 },
+      { "name": "Cachoeiro de Itapemirim", "value": 3 },
+      { "name": "Serra", "value": 3 },
+      { "name": "Anchieta", "value": 1 },
+      { "name": "Baixo Guandu", "value": 1 },
+      { "name": "Boa Esperança", "value": 1 }
+    ]
   }
 }
