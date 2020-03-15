@@ -34,7 +34,38 @@ export const ContainerGraph =styled.div`
   margin-bottom: 10px;
   margin-top: 10px;
   margin-left : 10px;
-  
+
+  @keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: hidden;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+  }
+
+  -webkit-animation-name: slideInUp;
+  animation-name: slideInUp;
+
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+`;
+
+export const ContainerGraphDelay1 = styled(ContainerGraph)`
+  -webkit-animation-delay: .4s;
+  animation-delay: .4s;
+`;
+
+export const ContainerGraphDelay2 = styled(ContainerGraph)`
+  -webkit-animation-delay: .8s;
+  animation-delay: .8s;
 `;
 
 export const TitleGraph  = styled.div`

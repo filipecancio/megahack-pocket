@@ -4,7 +4,9 @@ import axios from "axios";
 import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip,
   ResponsiveContainer  } from 'recharts';
 
-import { ContainerGraph , TitleGraph, Container, Header, Title } from './styles';
+import { ContainerGraph , TitleGraph, Container, Header, Title,
+  ContainerGraphDelay1, ContainerGraphDelay2 } from './styles';
+  
 
 const dataChart = [
   {name: "Josias", value: 10},
@@ -62,7 +64,7 @@ function App() {
         </ResponsiveContainer>
       </ContainerGraph>
 
-      <ContainerGraph>
+      <ContainerGraphDelay1>
         <TitleGraph>
           Dados statups
         </TitleGraph> 
@@ -75,9 +77,9 @@ function App() {
             <Tooltip />
           </LineChart> 
         </ResponsiveContainer>
-      </ContainerGraph>
+      </ContainerGraphDelay1>
 
-      <ContainerGraph>
+      <ContainerGraphDelay2>
         <TitleGraph>
           Dados statups
         </TitleGraph> 
@@ -90,7 +92,7 @@ function App() {
             <Tooltip />
           </LineChart> 
         </ResponsiveContainer>
-      </ContainerGraph>
+      </ContainerGraphDelay2>
     </Container>
     </>
   );
