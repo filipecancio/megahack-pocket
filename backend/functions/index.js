@@ -15,16 +15,14 @@ app.get("/inicio", (request, response) => {
     let base = [];
 
     docs.forEach(doc => {
-      base.push({ id: doc.id, description: doc.data().description });
+      base.push(doc.data());
     });
 
     response.json(base);
   });
 });
 app.post("/inicio", (request, response) => {
-  const newBase = {
-    description: request.body.description
-  };
+  const newBase = request.body;
   db.add(newBase).then(() => {
     response.status(200).json(null);
   });
