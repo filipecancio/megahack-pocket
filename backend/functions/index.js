@@ -3,6 +3,9 @@
 const functions = require("firebase-functions");
 const app = require("express")();
 const admin = require("firebase-admin");
+const corsModule = require("cors");
+
+const cors = corsModule({ origin: true });
 
 //Initialize the firebase functions
 admin.initializeApp();
@@ -11,20 +14,24 @@ admin.initializeApp();
 const db = admin.firestore().collection("base");
 
 app.get("/inicio", (request, response) => {
-  db.get().then(docs => {
-    let base = [];
+  cors(request, response, async () => {
+    db.get().then(docs => {
+      let base = [];
 
-    docs.forEach(doc => {
-      base.push(doc.data());
+      docs.forEach(doc => {
+        base.push(doc.data());
+      });
+
+      response.json(base);
     });
-
-    response.json(base);
   });
 });
 app.post("/inicio", (request, response) => {
-  const newBase = request.body;
-  db.add(newBase).then(() => {
-    response.status(200).json(null);
+  cors(request, response, async () => {
+    const newBase = request.body;
+    db.add(newBase).then(() => {
+      response.status(200).json(null);
+    });
   });
 });
 
