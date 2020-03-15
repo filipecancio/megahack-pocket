@@ -1,18 +1,18 @@
 import React from "react";
-import { Container, Icon } from "./styles";
+import { Container, Icon, Nav } from "./styles";
 
 function Header(props) {
   return (
     <>
       <Container>
         <Icon />
-        <div>
+        <Nav>
           <p>Início</p>
           <p>Statups</p>
           <p>Comunidades</p>
           <p>Programas</p>
           <p>Estatíticas</p>
-        </div>
+        </Nav>
       </Container>
     </>
   );
