@@ -7,6 +7,8 @@ export const Container = styled.div`
   display: flex;
   justify-content: space-around;
   background: white;
+  box-shadow: 0px 0px 15px #e5e5e5;
+  margin-bottom: 20px;
 `;
 export const Icon = styled.div`
   background: url(${logo}) center no-repeat;
