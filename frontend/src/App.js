@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import Header from "./components/Header";
 import UserHeader from "./components/UserHeader";
+import BodyContent from "./components/BodyContent";
 
 function App() {
   const [data, setData] = useState();
