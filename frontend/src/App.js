@@ -8,8 +8,21 @@ import { ContainerGraph , TitleGraph, Container, Header, Title,
   ContainerGraphDelay1, ContainerGraphDelay2, ContentHeaderCard,
   Card, TitleCard, TextCard } from './styles';
 
+  import AreaChart from './components/AreaChart';
 
 const dataChart = [
+  {name: "Josias", value: 10},
+  {name: "Maria", value: 15},
+  {name: "João", value: 7},
+  {name: "Lucas", value: 25},
+  {name: "Josias", value: 10},
+  {name: "Maria", value: 15},
+  {name: "João", value: 7},
+  {name: "Lucas", value: 25},
+  {name: "Josias", value: 10},
+  {name: "Maria", value: 15},
+  {name: "João", value: 7},
+  {name: "Lucas", value: 25},
   {name: "Josias", value: 10},
   {name: "Maria", value: 15},
   {name: "João", value: 7},
@@ -84,20 +97,7 @@ function App() {
       </Card>
     </ContentHeaderCard>
     <Container>
-      <ContainerGraph>
-        <TitleGraph>
-          Dados statups
-        </TitleGraph> 
-        <ResponsiveContainer width="99%" minHeight={300}>              
-          <LineChart data={dataChart} margin={{ top: 5, right: 20, bottom: 5, left: 0 }}>
-            <Line type="monotone" dataKey="value" stroke="#8884d8" />
-            <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
-            <XAxis dataKey="name" />
-            <YAxis />
-            <Tooltip />
-          </LineChart> 
-        </ResponsiveContainer>
-      </ContainerGraph>
+      <AreaChart data={dataChart} title = "Novo" yLabel="Nobo"/>
 
       <ContainerGraphDelay1>
         <TitleGraph>
