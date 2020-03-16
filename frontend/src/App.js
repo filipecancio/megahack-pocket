@@ -1,5 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
+import Header from "./components/Header";
+import UserHeader from "./components/UserHeader";
+import BodyContent from "./components/BodyContent";
+import value from "./data.json";
 
 function App() {
   const [data, setData] = useState();
@@ -27,9 +31,11 @@ function App() {
   }, []);
 
   return (
-    <div>
-      <h1>Hello world</h1>
-    </div>
+    <>
+      <Header />
+      <UserHeader />
+      <BodyContent data={value} />
+    </>
   );
 }
 
