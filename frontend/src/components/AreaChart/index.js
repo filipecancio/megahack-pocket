@@ -1,6 +1,6 @@
 import React from 'react';
 import { AreaChart, Area, CartesianGrid, XAxis, YAxis, Tooltip,
-  ResponsiveContainer   } from 'recharts';
+  ResponsiveContainer , Legend  } from 'recharts';
 import { ContainerGraph, TitleGraph } from './styles';
 
 
@@ -15,7 +15,7 @@ import { ContainerGraph, TitleGraph } from './styles';
 */
 
 
-export default function CustomAreaChart({data, title, yLabel}) {
+export default function CustomAreaChart({data, title, yLabel, xLabel}) {
   return (
     <>
       <ContainerGraph>
@@ -30,10 +30,11 @@ export default function CustomAreaChart({data, title, yLabel}) {
               }}
             >
               <CartesianGrid strokeDasharray="3 3" />
-              <XAxis dataKey="name" angle={-90} dy={20} height={50}/>
-              <YAxis  label={{ value: yLabel, angle: -90, position: 'insideLeft' }} />
+              <XAxis dataKey="name" angle={-90} dy={50} height={120} label={xLabel}/>
+              <YAxis  label={{ value: yLabel, angle: -90,  }} width={85} />
               <Tooltip />
-              <Area type="monotone" dataKey="value" stroke="#8884d8" fill="#8884d8" />
+              <Area type="linear" dataKey="value" stroke="#3891da" fill="#a1d2ff"/>
+              <Legend />
             </AreaChart>
         </ResponsiveContainer>
       </ContainerGraph>

@@ -20,13 +20,13 @@ function BodyContent(props) {
           <p>Anchieta</p>
         </div>
         <div>
-          <CustomPieChart data={data.chart01.data} title={data.chart01.title} />
+          <CustomAreaChart data={data.chart01.data} title={data.chart01.title} yLabel={data.chart01.title} xLabel="Criado" />
           <div>
             <CustomPieChart
               data={data.chart01.data}
               title={data.chart01.title}
             />
-            <CustomPieChart
+            <CustomAreaChart
               data={data.chart01.data}
               title={data.chart01.title}
             />

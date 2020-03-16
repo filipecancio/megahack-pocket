@@ -14,6 +14,16 @@ import { ContainerGraph, TitleGraph } from './styles';
   ]
 */
 
+function getRandomColor() {
+  var letters = '0123456789ABCDEF';
+  var color = '#';
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+
+
 export default function CustomPieChart ({data, title, innerRadius}) {
   return (
     <>
@@ -35,8 +45,12 @@ export default function CustomPieChart ({data, title, innerRadius}) {
                 data={data} 
                 
                 fill="#8884d8" label >
-              
+              {
+                data.map((entry, index) => <Cell key={`cell-${index}`} fill={getRandomColor()}  />)
+              }
               </Pie>
+
+              <Legend align="right" verticalAlign="bottom"/>
               <Tooltip/>
             </PieChart>
         </ResponsiveContainer>
