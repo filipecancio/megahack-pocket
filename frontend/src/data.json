@@ -6,7 +6,7 @@
     "Cachoeiro de Itapemirim"
   ],
   "chart01": {
-    "title": "Empresas",
+    "title": "Statups por região",
     "data": [
       { "name": "Vitória", "value": 10 },
       { "name": "Vila Velha", "value": 82 },
@@ -37,10 +37,10 @@
   "chart03": {
     "title": "Dimensão da empresa",
     "data": [
-      { "name": "6-10", "value": 48 },
-      { "name": "1-5", "value": 49 },
-      { "name": "21-50", "value": 9 },
-      { "name": "11-20", "value": 2 }
+      { "name": "Entre 6 e 10 pessoas", "value": 48 },
+      { "name": "Entre 1 e 5 pessoas", "value": 49 },
+      { "name": "Entre 21 e 50 pessoas", "value": 9 },
+      { "name": "Entre 11 e 20 pessoas", "value": 2 }
     ]
   }
 }
