@@ -3,7 +3,7 @@ import axios from "axios";
 import Header from "./components/Header";
 import UserHeader from "./components/UserHeader";
 import BodyContent from "./components/BodyContent";
-import CustomPieChart from "./components/PieChart";
+import value from "./data.json";
 
 function App() {
   const [data, setData] = useState();
@@ -34,7 +34,7 @@ function App() {
     <>
       <Header />
       <UserHeader />
-      <BodyContent />
+      <BodyContent data={value} />
     </>
   );
 }

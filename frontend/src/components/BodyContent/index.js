@@ -1,40 +1,40 @@
 import React from "react";
-import { Container , ContainerGraph1, SideRight , SideLeft, ContainerGraph} from "./styles";
+import { Container , ContainerGraph1, SideRight , SideLeft, 
+  ContainerGraph, TableLeft} from "./styles";
+
 import CustomPieChart from "../PieChart";
 import CustomAreaChart from "../AreaChart";
-import data from "./data.json";
 
 function BodyContent(props) {
   return (
-    <>
+  <>
       <Container>
-        <SideLeft>
-          <h1>Cidades</h1>
-          {data.citys.map(element => (
-            <p>{element}</p>
-          ))}
-        </SideLeft>
+        <TableLeft>
+            <h1>Cidades</h1>
+            {props.data.citys.map(element => (
+              <p>{element}</p>
+            ))}
+        </TableLeft>
         <ContainerGraph>
           <ContainerGraph1>
             <CustomPieChart 
-              data={data.chart01.data} 
-              title={data.chart01.title}
+              data={props.data.chart01.data} 
+              title={props.data.chart01.title}
               />
           </ContainerGraph1>
           
           <div>
             <CustomAreaChart
-              data={data.chart02.data}
-              title={data.chart02.title}
+              data={props.data.chart02.data}
+              title={props.data.chart02.title}
               yLabel="Contagem de empresas"
             />
             <CustomPieChart
-              data={data.chart03.data}
-              title={data.chart03.title}
-              innerRadius = {60}
-            />
+              data={props.data.chart03.data}
+              title={props.data.chart03.title}
+              innerRadius = {60}/>
           </div>
-        </ContainerGraph>
+        </ContainerGraph>        
         <SideRight>
           <div>
             <h1>Estado</h1>
@@ -46,7 +46,7 @@ function BodyContent(props) {
           </div>
         </SideRight>
       </Container>
-    </>
+  </>
   );
 }
 

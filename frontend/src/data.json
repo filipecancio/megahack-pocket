@@ -1,0 +1,46 @@
+{
+  "citys": [
+    "Anchieta",
+    "Baixo Guandu",
+    "Boa Esperança",
+    "Cachoeiro de Itapemirim"
+  ],
+  "chart01": {
+    "title": "Statups por região",
+    "data": [
+      { "name": "Vitória", "value": 10 },
+      { "name": "Vila Velha", "value": 82 },
+      { "name": "Cachoeiro de Itapemirim", "value": 3 },
+      { "name": "Serra", "value": 3 },
+      { "name": "Anchieta", "value": 1 },
+      { "name": "Baixo Guandu", "value": 1 },
+      { "name": "Boa Esperança", "value": 1 }
+    ]
+  },
+  "chart02": {
+    "title": "Novas Statups em 2019",
+    "data": [
+      { "name": "jan", "value": 80 },
+      { "name": "fev", "value": 75 },
+      { "name": "mar", "value": 50 },
+      { "name": "abr", "value": 22 },
+      { "name": "mai", "value": 99 },
+      { "name": "jun", "value": 200 },
+      { "name": "jul", "value": 10 },
+      { "name": "ago", "value": 23 },
+      { "name": "set", "value": 47 },
+      { "name": "out", "value": 49 },
+      { "name": "nov", "value": 50 },
+      { "name": "dez", "value": 60 }
+    ]
+  },
+  "chart03": {
+    "title": "Dimensão da empresa",
+    "data": [
+      { "name": "Entre 6 e 10 pessoas", "value": 48 },
+      { "name": "Entre 1 e 5 pessoas", "value": 49 },
+      { "name": "Entre 21 e 50 pessoas", "value": 9 },
+      { "name": "Entre 11 e 20 pessoas", "value": 2 }
+    ]
+  }
+}

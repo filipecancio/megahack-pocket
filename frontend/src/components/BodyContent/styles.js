@@ -8,6 +8,16 @@ export const Container = styled.div`
   background-color: #e6e9ec;
   display: flex;
   justify-content : center;
+  justify-content: space-between;
+`;
+
+export const TableLeft = styled.div`
+  width: 100px;
+  height: 100%;
+`;
+export const TableRight = styled.div`
+  width: 100px;
+  height: 100%;
 `;
 
 export const ContainerGraph1 = styled.div`
