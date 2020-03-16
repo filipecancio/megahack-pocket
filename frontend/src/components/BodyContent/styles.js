@@ -14,6 +14,7 @@ export const Container = styled.div`
 export const TableLeft = styled.div`
   width: 100px;
   height: 100%;
+  flex: 1;
 `;
 export const TableRight = styled.div`
   width: 100px;
@@ -25,7 +26,7 @@ export const ContainerGraph1 = styled.div`
   flex : 2;
 `;
 export const ContainerGraph = styled.div`
-  width: 100%;  
+  
   flex : 5;
 `;
 export const SideRight = styled.div`
@@ -35,4 +36,5 @@ export const SideRight = styled.div`
 
 export const SideLeft = styled.div`
   flex: 1;
+
 `;
