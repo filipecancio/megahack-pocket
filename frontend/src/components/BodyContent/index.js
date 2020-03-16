@@ -10,25 +10,20 @@ function BodyContent(props) {
       <Container>
         <div>
           <h1>Cidades</h1>
-          <p>Anchieta</p>
-          <p>Anchieta</p>
-          <p>Anchieta</p>
-          <p>Anchieta</p>
-          <p>Anchieta</p>
-          <p>Anchieta</p>
-          <p>Anchieta</p>
-          <p>Anchieta</p>
+          {data.citys.map(element => (
+            <p>{element}</p>
+          ))}
         </div>
         <div>
           <CustomAreaChart data={data.chart01.data} title={data.chart01.title} yLabel={data.chart01.title} xLabel="Criado" />
           <div>
-            <CustomPieChart
-              data={data.chart01.data}
-              title={data.chart01.title}
-            />
             <CustomAreaChart
-              data={data.chart01.data}
-              title={data.chart01.title}
+              data={data.chart02.data}
+              title={data.chart02.title}
+            />
+            <CustomPieChart
+              data={data.chart03.data}
+              title={data.chart03.title}
             />
           </div>
         </div>
