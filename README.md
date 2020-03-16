@@ -1,5 +1,4 @@
-# megahack-pocket
-A dashboard for startupbase.com.br
+# Acompanhe Startups do seu segmento #megahack-pocket
 
 Dashboard criado para a Startupbase, da ABStartup. 
 Com ele é possível que startups comparem seu desempenho com outras do mesmo segmento. 
