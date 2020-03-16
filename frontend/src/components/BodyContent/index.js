@@ -2,7 +2,6 @@ import React from "react";
 import { Container } from "./styles";
 import CustomPieChart from "../PieChart";
 import CustomAreaChart from "../AreaChart";
-import data from "./data.json";
 
 function BodyContent(props) {
   return (
@@ -10,20 +9,23 @@ function BodyContent(props) {
       <Container>
         <div>
           <h1>Cidades</h1>
-          {data.citys.map(element => (
+          {props.data.citys.map(element => (
             <p>{element}</p>
           ))}
         </div>
         <div>
-          <CustomPieChart data={data.chart01.data} title={data.chart01.title} />
+          <CustomPieChart
+            data={props.data.chart01.data}
+            title={props.data.chart01.title}
+          />
           <div>
             <CustomAreaChart
-              data={data.chart02.data}
-              title={data.chart02.title}
+              data={props.data.chart02.data}
+              title={props.data.chart02.title}
             />
             <CustomPieChart
-              data={data.chart03.data}
-              title={data.chart03.title}
+              data={props.data.chart03.data}
+              title={props.data.chart03.title}
             />
           </div>
         </div>
