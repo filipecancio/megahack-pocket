@@ -31,7 +31,7 @@ export default function CustomPieChart ({data, title, innerRadius, width}) {
         <TitleGraph>
           {title}
         </TitleGraph>
-        <ResponsiveContainer width="99%" minHeight={300} minWidth={300}>
+        <ResponsiveContainer width="99%" minHeight={300} >
           <PieChart              
               data={data}              
               margin={{

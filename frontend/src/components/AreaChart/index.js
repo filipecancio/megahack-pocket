@@ -30,7 +30,7 @@ export default function CustomAreaChart({data, title, yLabel, xLabel, width}) {
               }}
             >
               <CartesianGrid strokeDasharray="3 3" />
-              <XAxis dataKey="name" angle={-90} dy={50} height={120} label={xLabel}/>
+              <XAxis dataKey="name" angle={-90} dy={50} height={140} label={xLabel}/>
               <YAxis  label={{ value: yLabel, angle: -90 }} width={85} />
               <Tooltip />
               <Area type="linear" dataKey="value" stroke="#3891da" fill="#a1d2ff"/>

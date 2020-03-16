@@ -1,6 +1,6 @@
 import React from "react";
 import { Container , ContainerGraph1, SideRight , SideLeft, 
-  ContainerGraph, TableLeft} from "./styles";
+  ContainerGraph, TableLeft, ContainerGraph2} from "./styles";
 
 import CustomPieChart from "../PieChart";
 import CustomAreaChart from "../AreaChart";
@@ -20,10 +20,11 @@ function BodyContent(props) {
             <CustomPieChart 
               data={props.data.chart01.data} 
               title={props.data.chart01.title}
+              width={2000}
               />
           </ContainerGraph1>
           
-          <div>
+          <ContainerGraph2>
             <CustomAreaChart
               data={props.data.chart02.data}
               title={props.data.chart02.title}
@@ -33,7 +34,7 @@ function BodyContent(props) {
               data={props.data.chart03.data}
               title={props.data.chart03.title}
               innerRadius = {60}/>
-          </div>
+          </ContainerGraph2>
         </ContainerGraph>        
         <SideRight>
           <div>

@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 
 export const ContainerGraph =styled.div`
-  
-  max-height : 500px;
+  max-width : ${props => (props.width? props.width: 600)}px;
+  max-height : 400px;
   width : 100%;
   flex-direction: row;
   justify-content: center;
@@ -12,7 +12,6 @@ export const ContainerGraph =styled.div`
   background-color : #fff;
   margin-bottom: 10px;
   margin-top: 10px;
-  margin-left : 10px;
   box-shadow: 0 5px 8px rgba(0,0,0,0.2);
   border-radius: 8px;
 
