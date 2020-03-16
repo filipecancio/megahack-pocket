@@ -14,9 +14,11 @@ function BodyContent(props) {
           ))}
         </div>
         <div>
-          <CustomPieChart
+          <CustomAreaChart
             data={props.data.chart01.data}
             title={props.data.chart01.title}
+            yLabel={data.chart01.title}
+            xLabel="Criado"
           />
           <div>
             <CustomAreaChart
