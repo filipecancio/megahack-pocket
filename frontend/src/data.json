@@ -18,15 +18,20 @@
     ]
   },
   "chart02": {
-    "title": "Data de criação",
+    "title": "Novas Statups em 2019",
     "data": [
-      { "name": "maio de 2019", "value": 10 },
-      { "name": "maio de 2019", "value": 82 },
-      { "name": "maio de 2019", "value": 3 },
-      { "name": "maio de 2019", "value": 3 },
-      { "name": "maio de 2019", "value": 1 },
-      { "name": "maio de 2019", "value": 1 },
-      { "name": "maio de 2019", "value": 1 }
+      { "name": "jan", "value": 80 },
+      { "name": "fev", "value": 75 },
+      { "name": "mar", "value": 50 },
+      { "name": "abr", "value": 22 },
+      { "name": "mai", "value": 99 },
+      { "name": "jun", "value": 200 },
+      { "name": "jul", "value": 10 },
+      { "name": "ago", "value": 23 },
+      { "name": "set", "value": 47 },
+      { "name": "out", "value": 49 },
+      { "name": "nov", "value": 50 },
+      { "name": "dez", "value": 60 }
     ]
   },
   "chart03": {

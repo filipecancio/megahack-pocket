@@ -1,5 +1,5 @@
 import React from "react";
-import { Container } from "./styles";
+import { Container, TableLeft } from "./styles";
 import CustomPieChart from "../PieChart";
 import CustomAreaChart from "../AreaChart";
 
@@ -7,17 +7,17 @@ function BodyContent(props) {
   return (
     <>
       <Container>
-        <div>
+        <TableLeft>
           <h1>Cidades</h1>
           {props.data.citys.map(element => (
             <p>{element}</p>
           ))}
-        </div>
+        </TableLeft>
         <div>
           <CustomAreaChart
             data={props.data.chart01.data}
             title={props.data.chart01.title}
-            yLabel={data.chart01.title}
+            yLabel={props.data.chart01.title}
             xLabel="Criado"
           />
           <div>

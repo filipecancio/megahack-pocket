@@ -7,4 +7,14 @@ export const Container = styled.div`
   padding: 50px;
   background-color: #e6e9ec;
   display: flex;
+  justify-content: space-between;
+`;
+
+export const TableLeft = styled.div`
+  width: 100px;
+  height: 100%;
+`;
+export const TableRight = styled.div`
+  width: 100px;
+  height: 100%;
 `;
