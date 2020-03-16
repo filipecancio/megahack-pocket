@@ -15,10 +15,10 @@ import { ContainerGraph, TitleGraph } from './styles';
 */
 
 
-export default function CustomAreaChart({data, title, yLabel, xLabel}) {
+export default function CustomAreaChart({data, title, yLabel, xLabel, width}) {
   return (
     <>
-      <ContainerGraph>
+      <ContainerGraph width={width}>
         <TitleGraph>
           {title}
         </TitleGraph>
@@ -31,10 +31,10 @@ export default function CustomAreaChart({data, title, yLabel, xLabel}) {
             >
               <CartesianGrid strokeDasharray="3 3" />
               <XAxis dataKey="name" angle={-90} dy={50} height={120} label={xLabel}/>
-              <YAxis  label={{ value: yLabel, angle: -90,  }} width={85} />
+              <YAxis  label={{ value: yLabel, angle: -90 }} width={85} />
               <Tooltip />
               <Area type="linear" dataKey="value" stroke="#3891da" fill="#a1d2ff"/>
-              <Legend />
+              
             </AreaChart>
         </ResponsiveContainer>
       </ContainerGraph>

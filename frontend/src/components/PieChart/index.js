@@ -24,10 +24,10 @@ function getRandomColor() {
 }
 
 
-export default function CustomPieChart ({data, title, innerRadius}) {
+export default function CustomPieChart ({data, title, innerRadius, width}) {
   return (
     <>
-      <ContainerGraph>
+      <ContainerGraph width={width}>
         <TitleGraph>
           {title}
         </TitleGraph>

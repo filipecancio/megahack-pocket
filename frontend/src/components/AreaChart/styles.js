@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 
 export const ContainerGraph =styled.div`
-  max-width : 600px;
+  max-width : ${props => (props.width? props.width: 600)}'px';
   max-height : 400px;
   width : 100%;
   flex-direction: row;
